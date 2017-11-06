@@ -1,0 +1,11 @@
+language: node_js
+
+install:
+  - npm install
+  - npm install surge
+
+script:
+  - npm run prod
+
+after_success:
+  - surge --project ./public --domain thewatcher.surge.sh

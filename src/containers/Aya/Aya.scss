@@ -1,0 +1,57 @@
+//
+// Aya Style Guide
+//
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Colors
+$ayaColor: ();
+// "body-color": $body-color,
+// "gray-dark": $gray-800,
+// "gray": $gray-700,
+// "gray-light": $gray-600,
+// "gray-lighter": $gray-200,
+// "gray-lightest": $white,
+// "brand-primary": $brand-primary,
+// "brand-success": $brand-success,
+// "brand-info": $brand-info,
+// "brand-warning": $brand-warning,
+// "brand-danger": $brand-danger
+
+.ayaColor {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+}
+
+@each $ayaName, $ayaColor in $ayaColor {
+  .ayaColor--#{$ayaName} {
+    background: $ayaColor;
+    @if (lightness($ayaColor) > 80) {
+      color: $gray-800;
+    }
+
+    &::before {
+      content: "#{$ayaName}";
+    }
+    &::after {
+      content: "#{$ayaColor}";
+    }
+  }
+}
+
+// Font Sizes
+
+.ayah1::after {
+  content: ": #{$h1-font-size} (#{strip-unit($h1-font-size)*16}px)";
+}
+
+.ayah2::after {
+  content: ": #{$h2-font-size} (#{strip-unit($h2-font-size)*16}px)";
+}

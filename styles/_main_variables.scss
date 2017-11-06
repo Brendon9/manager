@@ -1,0 +1,128 @@
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+// $menu-width: 250px;
+$menu-button-width: 50px;
+$menu-width: 250px;
+$nav-height: 50px;
+
+// z index
+// $z-index-9000--menu: 9000;
+$zindex-loading: 1100;
+
+$white: #fff;
+$gray-200: #efeff0;
+$gray-500: #c2c6cf;
+$gray-600: #757575;
+$gray-700: #414042;
+$gray-800: #333132;
+$gray-900: #1e1d1e;
+$black: #000;
+
+$gray-700s: (
+  200: $gray-200,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+);
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #8c131b;
+$orange: #e69d32;
+$yellow: #ffc107 !default;
+$green: #458f7c;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$brand-primary: $orange;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $brand-primary,
+  secondary: $gray-700,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-200,
+  gray: $gray-600,
+  dark: $gray-900
+);
+
+// Options
+$enable-rounded: false;
+
+// Spacing
+
+$spacer: 15px;
+$border-width: 0px;
+
+// Body
+
+$body-bg: $gray-700;
+$body-color: $gray-200;
+
+// Typography
+
+$font-family-sans-serif: "Ruda", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-size-sm: 0.75rem !default;
+
+$h1-font-size: 1.25rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$h4-font-size: 0.625rem;
+
+// Tabs
+
+$nav-tabs-link-active-bg: $black;
+$nav-tabs-link-active-color: $gray-200;
+$nav-tabs-link-active-border-color: $brand-primary;
+
+// Buttons
+
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y: 1rem;
+
+$input-btn-padding-y-sm: 0.5rem;
+
+$form-group-margin-bottom: $spacer;
+
+$btn-focus-box-shadow: none;
+
+// Forms
+
+$input-bg: $gray-700;
+$input-bg-disabled: $gray-700;
+
+$input-color: $white;
+$input-placeholder-color: #939598;
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding: 0.5rem 1rem 1.5rem;
+$modal-content-bg: $gray-800;
+
+$modal-backdrop-opacity: 0.84;

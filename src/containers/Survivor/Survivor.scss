@@ -1,0 +1,53 @@
+.layout--survivor {
+  grid-template-columns: repeat(6, 1fr);
+  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  //   grid-template-areas: "survival    bleeding      bleeding      hunt"
+  //     "courage     understanding understanding weapon"
+  //     "stats       stats         stats         stats"
+  //     "armor       armor         armor         armor"
+  //     "arts        arts          disorders     disorders"
+  //     "abilities   abilities     abilities     abilities"
+  //     "impairments impairments   impairments   impairments"
+  //     "injury      injury        injury        injury"
+  //     "notes       notes         notes         notes";
+
+  > * {
+    grid-column-end: span 2;
+  }
+}
+
+.survivorStats,
+.survivorArmor,
+.survivor-ability,
+.survivor-impairment,
+.survivor-severe_injury,
+.survivorNotes {
+  grid-column-end: span 6;
+}
+
+.survivor-fighting_art,
+.survivor-disorder {
+  grid-column-end: span 3;
+}
+
+// Survival
+
+.survivalSkills {
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 12px;
+
+  span {
+    display: inline-block;
+    padding: 0.5rem;
+    color: $gray-600;
+
+    &.is-active {
+      color: #fff;
+    }
+
+    &.is-prevented {
+      color: $red;
+    }
+  }
+}

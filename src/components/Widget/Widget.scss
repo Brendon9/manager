@@ -1,0 +1,66 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  background: $gray-800;
+  // margin-bottom: $spacer-y;
+}
+
+.widget-header {
+  padding: 0.25rem 0.5rem;
+  background: $gray-900;
+  color: #fff;
+  font-size: $font-size-sm;
+}
+
+.widget-header--link {
+  background: $gray-600;
+}
+
+.widget-header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.widget-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: $spacer;
+  align-items: stretch;
+
+  @at-root button#{&}, a#{&} {
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background: rgba($brand-primary, 0.14);
+      outline: none;
+    }
+  }
+}
+
+// .widget-content--center {
+//   align-items: center;
+// }
+
+.widget-footer {
+  display: flex;
+  margin-top: $spacer;
+
+  > * {
+    flex: 1 0 100px;
+    margin-right: $spacer;
+  }
+
+  > :last-child {
+    margin-right: 0;
+  }
+}

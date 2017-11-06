@@ -1,0 +1,53 @@
+// Button
+
+.btn {
+  // font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+
+  &:focus {
+    opacity: 0.87;
+    box-shadow: none;
+  }
+
+  .icon {
+    display: inline-block;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-link {
+  color: #fff;
+  text-decoration: underline;
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+// Button Group
+
+a:focus {
+  outline: 0;
+}
+
+.btn-group--full {
+  width: 100%;
+
+  > .btn {
+    flex: 1 1 100px;
+  }
+}
+
+// Reset buttons
+
+.btn-block + .btn-block {
+  margin: 0;
+}
