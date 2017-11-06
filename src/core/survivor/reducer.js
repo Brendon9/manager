@@ -231,15 +231,25 @@ const mockStats = {
   notes: ["none"]
 };
 
-export const survivorReducer = (state = null, action) => {
+const initialState = {
+  survival: 0,
+  huntExperience: 0,
+  courage: 0,
+  understanding: 0,
+  fightingArts: [],
+  disorders: [],
+  abilities: [],
+  impairments: [],
+  notes: []
+}
+
+export const survivorReducer = (state = initialState, action) => {
   switch (action.type) {
+
     case GET_SURVIVOR:
-      const survivorData = action.payload;
-      survivorData.mock = mockStats;
-      console.log("reducer_survivor", survivorData);
-      return survivorData;
     case CREATE_SURVIVOR:
       return action.payload;
+
     default:
       return state;
   }

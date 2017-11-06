@@ -22,20 +22,11 @@ import LoadingSpinner from "views/components/LoadingSpinner/LoadingSpinner"
 import { getSettlement } from "core/settlement"
 
 class Settlement extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     // Grabs any current settlement data that we might have
     const currentSettlement = this.props.settlementData
     const id = this.props.params.oid
-    if (
-      // Checks to see if we have data
-      currentSettlement === null ||
-      // Makes sure that data is up to date
-      currentSettlement.sheet._id.$oid !== id
-    ) {
+    if (currentSettlement === null || currentSettlement.sheet._id.$oid !== id) {
       this.props.getSettlement(id)
     }
   }

@@ -8,6 +8,8 @@ import { LocaleProvider } from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 import appLocaleData from 'react-intl/locale-data/en'
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 window.appLocale = {
   antd: enUS,
   locale: 'en-US',
