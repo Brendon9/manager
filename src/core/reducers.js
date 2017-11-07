@@ -12,7 +12,7 @@ export default combineReducers({
   authenticated: authenticationReducer,
   homeData: homeReducer,
   worldData: worldReducer,
-  settlementData: settlementReducer,
+  settlement: settlementReducer,
   survivorData: survivorReducer,
   headerData: headerReducer,
   userData: userReducer,

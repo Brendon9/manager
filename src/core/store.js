@@ -1,7 +1,7 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import reducers from './reducers'
-// import sagas from './sagas'
+import sagas from './sagas'
 
 
 export default function configureStore() {
@@ -16,7 +16,7 @@ export default function configureStore() {
   }
 
   const store = createStore(reducers, middleware)
-  // sagaMiddleware.run(sagas)
+  sagaMiddleware.run(sagas)
 
   if (module.hot) {
     module.hot.accept('./reducers', () => {

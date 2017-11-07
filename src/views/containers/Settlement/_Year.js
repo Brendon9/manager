@@ -5,38 +5,35 @@ import NumberIncrement from "views/components/NumberIncrement/NumberIncrement";
 import Stat from "views/components/Stats/Stats";
 import WidgetVariant from "views/components/Widget/WidgetVariant";
 
-class Principles extends Component {
+class LanternYear extends Component {
   constructor(props) {
     super(props);
     this.state = {
       toggleModal: false,
-      title: "Principles",
+      title: "Lantern Year",
       amount: props.amount
     };
-    this.updateAmount = this.updateAmount.bind(this);
-    this.handleCancel = this.handleCancel.bind(this);
-    this.handleConfirm = this.handleConfirm.bind(this);
-    this.handleModal = this.handleModal.bind(this);
   }
-  handleModal() {
+  handleModal = () => {
     this.setState({
       toggleModal: !this.state.toggleModal
     });
   }
-  handleCancel() {
+  handleCancel = () => {
     this.setState({
       amount: this.props.amount
     });
     this.handleModal();
   }
-  handleConfirm() {
+  handleConfirm = () => {
     // dispatches data to api to save
     this.handleModal();
   }
-  updateAmount(amount) {
+  updateAmount = (amount) => {
     console.log(`Amount changed to ${amount}`);
     this.setState({ amount });
   }
+
   renderConfirm() {
     if (this.state.amount === this.props.amount) {
       return (
@@ -51,12 +48,13 @@ class Principles extends Component {
       </Button>
     );
   }
+  
   render() {
     return (
       <WidgetVariant
         title={this.state.title}
         toggleModal={this.state.toggleModal}
-        myClass={"principles"}
+        myClass={"lanternYear"}
       >
         {/* This is in the widget */}
         <Stat amount={this.state.amount} />
@@ -77,12 +75,12 @@ class Principles extends Component {
   }
 }
 
-Principles.propTypes = {
+LanternYear.propTypes = {
   amount: PropTypes.number
 };
 
-Principles.defaultProps = {
+LanternYear.defaultProps = {
   amount: 0
 };
 
-export default Principles;
+export default LanternYear;

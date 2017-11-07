@@ -1,74 +1,64 @@
-import React from "react"
-import { Button } from "reactstrap"
-import { Link } from "react-router-dom"
-import { connect } from "react-redux"
-import { bindActionCreators } from "redux"
+import React, { Component } from 'react'
+import { Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import history from 'utils/history'
 
-import Header from "views/components/Header"
-import Icon from "views/components/Icon"
-import CardList from "views/components/CardList/CardList"
-import LoadingSpinner from "views/components/LoadingSpinner/LoadingSpinner"
-import { setCurrentSettlement } from "core/user"
+import Header from 'views/components/Header'
 
-class Settlements extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-    this.handleSetRedirect = this.handleSetRedirect.bind(this)
+import { Card, Icon, Row, Col } from 'antd';
+import { getSettlementList } from 'core/settlement'
+
+class Settlements extends Component {
+
+  componentDidMount() {
+    this.props.getSettlementList()
   }
-  handleSetRedirect(id) {
-    console.log("id", id)
-    setCurrentSettlement(id)
-      .then(res => {
-        console.log("res", res)
-      })
-      .catch(err => {
-        console.log("err", err)
-      })
+
+  handleSetRedirect = (id) => {
     history.push(`/settlements/${id}`)
   }
-  renderSettlements() {
-    if (this.props.userData && this.props.userData.dashboard) {
-      return this.props.userData.dashboard.settlements.map(settlement => {
-        return (
-          // <CardList
-          //   name={settlement.sheet.name}
-          //   desc={settlement.sheet.campaign}
-          //   action={() => this.handleSetRedirect(settlement.sheet._id.$oid)}
-          //   key={settlement.sheet._id.$oid}
-          //   meta={[
-          //     { label: "Year", value: settlement.sheet.lantern_year },
-          //     { label: "Population", value: settlement.sheet.population },
-          //     { label: "Expansions", value: settlement.sheet.expansions.length }
-          //   ]}
-          // />
-          <CardList
-            name={settlement.$oid}
-            action={() => this.handleSetRedirect(settlement.$oid)}
-            key={settlement.$oid}
-          />
-        )
-      })
-    }
-    return <LoadingSpinner />
-  }
+
   render() {
+    const { settlements } = this.props
+
     return (
       <div>
-        <Header name={"Settlements"} back="/more">
-          <Link to={"/settlements/create"} className="header-action">
-            <Icon name={"plus"} />
-          </Link>
-        </Header>
-        <div className="layout">{this.renderSettlements()}</div>
+
+        <Row>
+          {settlements.map(settlement => {
+            return (
+              <Col span={4}>
+                <Link to={`/settlements/${settlement.id}`}>
+                  <Card title={settlement.name} style={{height: '250px'}}>
+                    <p>Lantern Year: {settlement.lantern_year}</p>
+                  </Card>
+                </Link>
+              </Col>
+            )
+          })}
+        </Row>
+
+        <Row>
+          <Col span={4}>
+            <Card style={{height: '250px'}}>
+              <Link to="/settlements/create">
+                <Icon type='plus-circle-o' />
+              </Link>
+            </Card>
+          </Col>
+        </Row>
+
       </div>
     )
   }
 }
 
-function mapStateToProps(state) {
-  return { userData: state.userData }
-}
+const mapStateToProps = (state) => ({
+  settlements: state.settlement.list
+})
 
-export default connect(mapStateToProps, null)(Settlements)
+export default connect(mapStateToProps, {
+  getSettlementList
+})(Settlements)

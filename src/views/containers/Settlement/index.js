@@ -2,7 +2,7 @@ import React from "react"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import PropTypes from "prop-types"
-import { Row, Col } from "reactstrap"
+import { Row, Col, Card } from 'antd'
 
 import Innovations from "./_Innovations"
 import SurvivalLimit from "./_SurvivalLimit"
@@ -19,64 +19,106 @@ import Header from "views/components/Header"
 import Widget from "views/components/Widget/Widget"
 import LoadingSpinner from "views/components/LoadingSpinner/LoadingSpinner"
 
-import { getSettlement } from "core/settlement"
+import { getSettlement, updateSettlement } from "core/settlement"
 
 class Settlement extends React.Component {
+
   componentDidMount() {
-    // Grabs any current settlement data that we might have
-    const currentSettlement = this.props.settlementData
-    const id = this.props.params.oid
-    if (currentSettlement === null || currentSettlement.sheet._id.$oid !== id) {
-      this.props.getSettlement(id)
-    }
+    const { settlementId, getSettlement } = this.props
+    getSettlement(settlementId)
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.settlementData && this.props.settlementData === null) {
+    if (nextProps.settlement && this.props.settlement === null) {
       this.setState({
-        settlement: nextProps.settlementData
+        settlement: nextProps.settlement
       })
     }
   }
 
   render() {
-    if (this.props.settlementData) {
+    const { settlement, settlementId, updateSettlement } = this.props
+    if (settlement) {
       return (
         <div>
-          <Header name={this.props.settlementData.sheet.name} />
-          <div className="layout layout--settlement">
-            <SurvivalLimit
-              amount={this.props.settlementData.sheet.survival_limit}
-            />
-            <LanternYear
-              amount={this.props.settlementData.sheet.lantern_year}
-            />
-            <Population amount={this.props.settlementData.sheet.population} />
+          <Row>
+            <Col span={8}>
+              <Card title="Survival Limit">
+                <SurvivalLimit
+                  settlementId={settlementId}
+                  amount={settlement.survival_limit}
+                  onUpdate={updateSettlement}
+                />
+              </Card>
+            </Col>
+            <Col span={8}>
+              <Card title="Settlement Name"><Header name={settlement.name} /></Card>
+            </Col>
+            <Col span={8}>
+              <Card title="Death Count"><DeathCount amount={settlement.death_count} /></Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+              <Card><LanternYear amount={settlement.lantern_year} /></Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+              <Card><Milestones amount={settlement.milestone_story_events.length} /></Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={12}>
+              <Card><Innovations list={settlement.innovations} /></Card>
+            </Col>
+            <Col span={12}>
+              <Card><Locations amount={settlement.locations.length} /></Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={12}>
+              <Card><Principles amount={settlement.principles.length} /></Card>
+            </Col>
+            <Col span={12}>
+              <Card>{/* Quarries */}</Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={12}>
+              <Card>{/* Resource Storage */}</Card>
+            </Col>
+            <Col span={12}>
+              <Card>{/* Gear Storage */}</Card>
+            </Col>
+          </Row>
 
-            <Innovations list={this.props.settlementData.sheet.innovations} />
+          <Row>
+            <Col span={8}>
+              <Card>{/* Nemesis Monsters */}</Card>
+            </Col>
+            <Col span={8}>
+              <Card>{/* Lantern Research Level */}</Card>
+            </Col>
+            <Col span={8}>
+              <Card><Notes /></Card>
+            </Col>
+          </Row>
 
-            <Principles
-              amount={this.props.settlementData.sheet.principles.length}
-            />
+          <Row>
+            <Col span={12}>
+              <Card><Population amount={settlement.population} /></Card>
+            </Col>
+            <Col span={12}>
+              <Card>{/* Lost Settlements */}</Card>
+            </Col>
+          </Row>
 
-            <Milestones
-              amount={
-                this.props.settlementData.sheet.milestone_story_events.length
-              }
-            />
-
-            <Locations
-              amount={this.props.settlementData.sheet.locations.length}
-            />
-
-            <DeathCount amount={this.props.settlementData.sheet.death_count} />
-
-            <DefeatedMonsters
-              amount={this.props.settlementData.sheet.defeated_monsters.length}
-            />
-
-            <Notes />
-          </div>
+          <Row>
+            <Col span={24}>
+              <Card>{/* survivors */}</Card>
+            </Col>
+          </Row>
         </div>
       )
     }
@@ -84,19 +126,11 @@ class Settlement extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(state, props) {
   return {
-    settlementData: state.settlementData
+    settlementId: props.match.params.oid,
+    settlement: state.settlement.item
   }
-}
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    {
-      getSettlement
-    },
-    dispatch
-  )
 }
 
 Settlement.propTypes = {
@@ -104,10 +138,16 @@ Settlement.propTypes = {
   params: PropTypes.shape({
     oid: PropTypes.string.isRequired
   }),
-  settlementData: PropTypes.shape({
+  settlement: PropTypes.shape({
     sheet: PropTypes.object,
     user_assets: PropTypes.object
   })
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Settlement)
+export default connect(
+  mapStateToProps,
+  {
+    getSettlement,
+    updateSettlement
+  }
+)(Settlement)

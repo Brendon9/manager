@@ -1,597 +1,606 @@
 {
   "campaigns": [],
-  "settlements": [{
-    "id": 1,
-    "survival_limit": 0,
-    "name": "",
-    "death_count": 0,
-    "campaign": "people_of_the_lantern",
-    "lantern_year": 0,
-    "timeline": [
-      {
-        "year": 0,
-        "showdown_event": [
-          {
-            "name": "White Lion (First Story)"
-          }
-        ]
-      }, {
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_first_day",
-            "name": "First Day"
-          }
-        ],
-        "story_event": [
-          {
-            "handle": "core_returning_survivors",
-            "type": "story_event",
-            "name": "Returning Survivors",
-            "page": 151
-          }
-        ],
-        "year": 1
+  "settlements": [
+    {
+      "id": 1,
+      "survival_limit": 1,
+      "name": "Emon",
+      "death_count": 2,
+      "campaign": "people_of_the_lantern",
+      "lantern_year": 0,
+      "timeline": [
+        {
+          "year": 0,
+          "showdown_event": [
+            {
+              "name": "White Lion (First Story)"
+            }
+          ]
+        },
+        {
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_first_day",
+              "name": "First Day"
+            }
+          ],
+          "story_event": [
+            {
+              "handle": "core_returning_survivors",
+              "type": "story_event",
+              "name": "Returning Survivors",
+              "page": 151
+            }
+          ],
+          "year": 1
+        },
+        {
+          "custom": [],
+          "story_event": [
+            {
+              "handle": "core_endless_screams",
+              "type": "story_event",
+              "name": "Endless Screams",
+              "page": 115
+            }
+          ],
+          "year": 2
+        },
+        {
+          "custom": [],
+          "year": 3
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: Butcher"
+            }
+          ],
+          "year": 4
+        },
+        {
+          "custom": [],
+          "story_event": [
+            {
+              "handle": "core_hands_of_heat",
+              "type": "story_event",
+              "name": "Hands of Heat",
+              "page": 117
+            }
+          ],
+          "year": 5
+        },
+        {
+          "custom": [
+            {
+              "type": "settlement_event",
+              "handle": "core_murder",
+              "name": "Murder"
+            }
+          ],
+          "story_event": [
+            {
+              "handle": "core_armored_strangers",
+              "type": "story_event",
+              "name": "Armored Strangers",
+              "page": 103
+            }
+          ],
+          "year": 6
+        },
+        {
+          "custom": [],
+          "story_event": [
+            {
+              "handle": "core_phoenix_feather",
+              "type": "story_event",
+              "name": "Phoenix Feather",
+              "page": 139
+            }
+          ],
+          "year": 7
+        },
+        {
+          "custom": [
+            {
+              "type": "settlement_event",
+              "handle": "core_murder",
+              "name": "Murder"
+            }
+          ],
+          "year": 8
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: King's Man"
+            }
+          ],
+          "settlement_event": [
+            {
+              "name": "Cracks in the ground"
+            }
+          ],
+          "year": 9
+        },
+        {
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_acid_storm",
+              "name": "Acid Storm"
+            }
+          ],
+          "year": 10
+        },
+        {
+          "custom": [],
+          "story_event": [
+            {
+              "handle": "core_regal_visit",
+              "type": "story_event",
+              "name": "Regal Visit",
+              "page": 149
+            }
+          ],
+          "year": 11
+        },
+        {
+          "showdown_event": [
+            {
+              "name": "Screaming Antelope Lvl 1"
+            }
+          ],
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_open_maw",
+              "name": "Open Maw"
+            }
+          ],
+          "story_event": [
+            {
+              "handle": "core_conviction",
+              "type": "story_event",
+              "name": "Principle: Conviction",
+              "page": 141
+            }
+          ],
+          "year": 12
+        },
+        {
+          "custom": [
+            {
+              "type": "story_event",
+              "handle": "core_hooded_knight",
+              "name": "Hooded Knight",
+              "page": 121
+            }
+          ],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: The Hand"
+            }
+          ],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_plague",
+              "name": "Plague"
+            }
+          ],
+          "year": 13
+        },
+        {
+          "showdown_event": [
+            {
+              "name": "Phoenix Lvl 1"
+            }
+          ],
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_dark_dentist",
+              "name": "Dark Dentist"
+            },
+            {
+              "type": "settlement_event",
+              "handle": "core_plague",
+              "name": "Plague"
+            }
+          ],
+          "year": 14
+        },
+        {
+          "showdown_event": [
+            {
+              "name": "White Lion Lvl 2"
+            }
+          ],
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_dark_dentist",
+              "name": "Dark Dentist"
+            }
+          ],
+          "year": 15
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter"
+            }
+          ],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_clinging_mist",
+              "name": "Clinging Mist"
+            }
+          ],
+          "year": 16
+        },
+        {
+          "showdown_event": [
+            {
+              "name": "White Lion Lvl 1"
+            }
+          ],
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_lights_in_the_sky",
+              "name": "Lights in the Sky"
+            }
+          ],
+          "story_event": [
+            {
+              "type": "story_event",
+              "handle": "core_hooded_knight",
+              "name": "Hooded Knight",
+              "page": 121
+            }
+          ],
+          "year": 17
+        },
+        {
+          "custom": [],
+          "year": 18
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter"
+            }
+          ],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_acid_storm",
+              "name": "Acid Storm"
+            }
+          ],
+          "year": 19
+        },
+        {
+          "custom": [],
+          "settlement_event": [
+            {
+              "type": "settlement_event",
+              "handle": "core_acid_storm",
+              "name": "Acid Storm"
+            }
+          ],
+          "story_event": [
+            {
+              "type": "story_event",
+              "handle": "core_hooded_knight",
+              "name": "Hooded Knight",
+              "page": 121
+            },
+            {
+              "type": "story_event",
+              "handle": "core_watched",
+              "name": "Watched",
+              "page": 175
+            }
+          ],
+          "year": 20
+        },
+        {
+          "showdown_event": [
+            {
+              "name": "Screaming Antelope Lvl 2"
+            }
+          ],
+          "custom": [],
+          "settlement_event": [
+            {
+              "name": "Acid Rain"
+            }
+          ],
+          "year": 21
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: Watcher"
+            }
+          ],
+          "story_event": [
+            {
+              "type": "story_event",
+              "handle": "core_death",
+              "name": "Principle: Death",
+              "page": 143
+            },
+            {
+              "type": "story_event",
+              "handle": "core_new_life",
+              "name": "Principle: New Life",
+              "page": 145
+            },
+            {
+              "type": "story_event",
+              "handle": "core_society",
+              "name": "Principle: Society",
+              "page": 147
+            }
+          ],
+          "year": 22
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: Level 3"
+            }
+          ],
+          "year": 23
+        },
+        {
+          "custom": [],
+          "story_event": [
+            {
+              "type": "story_event",
+              "handle": "core_bone_witch",
+              "name": "Bone Witch",
+              "page": 109
+            },
+            {
+              "type": "story_event",
+              "handle": "core_hooded_knight",
+              "name": "Hooded Knight",
+              "page": 121
+            }
+          ],
+          "year": 24
+        },
+        {
+          "custom": [],
+          "year": 25
+        },
+        {
+          "custom": [],
+          "nemesis_encounter": [
+            {
+              "name": "Nemesis Encounter: Watcher"
+            }
+          ],
+          "year": 26
+        },
+        {
+          "custom": [],
+          "year": 27
+        },
+        {
+          "custom": [],
+          "year": 28
+        },
+        {
+          "custom": [],
+          "year": 29
+        },
+        {
+          "custom": [],
+          "year": 30
+        },
+        {
+          "custom": [],
+          "year": 31
+        },
+        {
+          "custom": [],
+          "year": 32
+        },
+        {
+          "custom": [],
+          "year": 33
+        },
+        {
+          "custom": [],
+          "year": 34
+        },
+        {
+          "custom": [],
+          "year": 35
+        },
+        {
+          "custom": [],
+          "year": 36
+        }
+      ],
+      "milestone_story_events": [
+        "Settlement has 5 innovations",
+        "First time death count is updated",
+        "First child is born",
+        "Population reaches 15",
+        "Population reaches 0"
+      ],
+      "innovations": [],
+      "locations": [
+        "lantern_hoard"
+      ],
+      "principles": [],
+      "quarries": [
+        "white_lion"
+      ],
+      "storage": [],
+      "nemesis_monsters": [
+        "the_hand",
+        "kings_man",
+        "butcher",
+        "watcher"
+      ],
+      "notes": [],
+      "lost_settlements": 0,
+      "population": 4,
+      "survivors": []
+    }
+  ],
+  "survivors": [
+    {
+      "settlement_id": 1,
+      "name": "Gertrude",
+      "sex": "F",
+      "survival": 0,
+      "cannot_spend_survival": false,
+      "cannot_gain_survival": false,
+      "survival_actions": [
+        {
+          "available": true,
+          "handle": "dodge",
+          "name": "Dodge",
+          "sort_order": 0,
+          "title_tip": "'Dodge' is available by default."
+        },
+        {
+          "available": false,
+          "handle": "encourage",
+          "name": "Encourage",
+          "sort_order": 1,
+          "title_tip": "Settlement innovation 'Language' unlocks this ability."
+        },
+        {
+          "available": false,
+          "handle": "dash",
+          "name": "Dash",
+          "sort_order": 2,
+          "title_tip": "'Dash' has not been unlocked yet."
+        },
+        {
+          "available": false,
+          "handle": "surge",
+          "name": "Surge",
+          "sort_order": 3,
+          "title_tip": "'Surge' has not been unlocked yet."
+        },
+        {
+          "available": false,
+          "handle": "endure",
+          "name": "Endure",
+          "sort_order": 4,
+          "title_tip": "'Endure' has not been unlocked yet."
+        }
+      ],
+      "movement": {
+        "attribute": 5,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [],
-        "story_event": [
-          {
-            "handle": "core_endless_screams",
-            "type": "story_event",
-            "name": "Endless Screams",
-            "page": 115
-          }
-        ],
-        "year": 2
+      "accuracy": {
+        "attribute": 0,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [],
-        "year": 3
+      "strength": {
+        "attribute": 0,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: Butcher"
-          }
-        ],
-        "year": 4
+      "evasion": {
+        "attribute": 0,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [],
-        "story_event": [
-          {
-            "handle": "core_hands_of_heat",
-            "type": "story_event",
-            "name": "Hands of Heat",
-            "page": 117
-          }
-        ],
-        "year": 5
+      "luck": {
+        "attribute": 0,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [
-          {
-            "type": "settlement_event",
-            "handle": "core_murder",
-            "name": "Murder"
-          }
-        ],
-        "story_event": [
-          {
-            "handle": "core_armored_strangers",
-            "type": "story_event",
-            "name": "Armored Strangers",
-            "page": 103
-          }
-        ],
-        "year": 6
+      "speed": {
+        "attribute": 0,
+        "tokens": 0,
+        "gear": 0
       },
-      {
-        "custom": [],
-        "story_event": [
-          {
-            "handle": "core_phoenix_feather",
-            "type": "story_event",
-            "name": "Phoenix Feather",
-            "page": 139
-          }
-        ],
-        "year": 7
+      "brain": {
+        "insanity": 0,
+        "insane": false,
+        "light_hit": false
       },
-      {
-        "custom": [
-          {
-            "type": "settlement_event",
-            "handle": "core_murder",
-            "name": "Murder"
-          }
-        ],
-        "year": 8
+      "head": {
+        "armor": 0,
+        "heavy_hit": false
       },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: King's Man"
-          }
-        ],
-        "settlement_event": [
-          {
-            "name": "Cracks in the ground"
-          }
-        ],
-        "year": 9
+      "arms": {
+        "armor": 0,
+        "light_hit": false,
+        "heavy_hit": false
       },
-      {
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_acid_storm",
-            "name": "Acid Storm"
-          }
-        ],
-        "year": 10
+      "body": {
+        "armor": 0,
+        "light_hit": false,
+        "heavy_hit": false
       },
-      {
-        "custom": [],
-        "story_event": [
-          {
-            "handle": "core_regal_visit",
-            "type": "story_event",
-            "name": "Regal Visit",
-            "page": 149
-          }
-        ],
-        "year": 11
+      "waist": {
+        "armor": 0,
+        "light_hit": false,
+        "heavy_hit": false
       },
-      {
-        "showdown_event": [
-          {
-            "name": "Screaming Antelope Lvl 1"
-          }
-        ],
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_open_maw",
-            "name": "Open Maw"
-          }
-        ],
-        "story_event": [
-          {
-            "handle": "core_conviction",
-            "type": "story_event",
-            "name": "Principle: Conviction",
-            "page": 141
-          }
-        ],
-        "year": 12
+      "legs": {
+        "armor": 0,
+        "light_hit": false,
+        "heavy_hit": false
       },
-      {
-        "custom": [
-          {
-            "type": "story_event",
-            "handle": "core_hooded_knight",
-            "name": "Hooded Knight",
-            "page": 121
-          }
-        ],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: The Hand"
-          }
-        ],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_plague",
-            "name": "Plague"
-          }
-        ],
-        "year": 13
+      "hunt_xp": 0,
+      "weapon_proficiency_type": "",
+      "weapon_proficiency": 0,
+      "courage": 0,
+      "understanding": 0,
+      "cannot_use_fighting_arts": false,
+      "fighting_arts": [],
+      "disorders": [],
+      "abilities": [],
+      "impairments": [],
+      "skip_next_hunt": false,
+      "cannot_be_nominated_for_intimacy": false,
+      "born_in_year": 1,
+      "died_in_year": 1,
+      "dead": false,
+      "cause_of_death": "",
+      "savior": false,
+      "affinities": {
+        "blue": 0,
+        "green": 0,
+        "red": 0
       },
-      {
-        "showdown_event": [
-          {
-            "name": "Phoenix Lvl 1"
-          }
-        ],
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_dark_dentist",
-            "name": "Dark Dentist"
-          },
-          {
-            "type": "settlement_event",
-            "handle": "core_plague",
-            "name": "Plague"
-          }
-        ],
-        "year": 14
-      },
-      {
-        "showdown_event": [
-          {
-            "name": "White Lion Lvl 2"
-          }
-        ],
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_dark_dentist",
-            "name": "Dark Dentist"
-          }
-        ],
-        "year": 15
-      },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter"
-          }
-        ],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_clinging_mist",
-            "name": "Clinging Mist"
-          }
-        ],
-        "year": 16
-      },
-      {
-        "showdown_event": [
-          {
-            "name": "White Lion Lvl 1"
-          }
-        ],
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_lights_in_the_sky",
-            "name": "Lights in the Sky"
-          }
-        ],
-        "story_event": [
-          {
-            "type": "story_event",
-            "handle": "core_hooded_knight",
-            "name": "Hooded Knight",
-            "page": 121
-          }
-        ],
-        "year": 17
-      },
-      {
-        "custom": [],
-        "year": 18
-      },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter"
-          }
-        ],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_acid_storm",
-            "name": "Acid Storm"
-          }
-        ],
-        "year": 19
-      },
-      {
-        "custom": [],
-        "settlement_event": [
-          {
-            "type": "settlement_event",
-            "handle": "core_acid_storm",
-            "name": "Acid Storm"
-          }
-        ],
-        "story_event": [
-          {
-            "type": "story_event",
-            "handle": "core_hooded_knight",
-            "name": "Hooded Knight",
-            "page": 121
-          },
-          {
-            "type": "story_event",
-            "handle": "core_watched",
-            "name": "Watched",
-            "page": 175
-          }
-        ],
-        "year": 20
-      },
-      {
-        "showdown_event": [
-          {
-            "name": "Screaming Antelope Lvl 2"
-          }
-        ],
-        "custom": [],
-        "settlement_event": [
-          {
-            "name": "Acid Rain"
-          }
-        ],
-        "year": 21
-      },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: Watcher"
-          }
-        ],
-        "story_event": [
-          {
-            "type": "story_event",
-            "handle": "core_death",
-            "name": "Principle: Death",
-            "page": 143
-          },
-          {
-            "type": "story_event",
-            "handle": "core_new_life",
-            "name": "Principle: New Life",
-            "page": 145
-          },
-          {
-            "type": "story_event",
-            "handle": "core_society",
-            "name": "Principle: Society",
-            "page": 147
-          }
-        ],
-        "year": 22
-      },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: Level 3"
-          }
-        ],
-        "year": 23
-      },
-      {
-        "custom": [],
-        "story_event": [
-          {
-            "type": "story_event",
-            "handle": "core_bone_witch",
-            "name": "Bone Witch",
-            "page": 109
-          },
-          {
-            "type": "story_event",
-            "handle": "core_hooded_knight",
-            "name": "Hooded Knight",
-            "page": 121
-          }
-        ],
-        "year": 24
-      },
-      {
-        "custom": [],
-        "year": 25
-      },
-      {
-        "custom": [],
-        "nemesis_encounter": [
-          {
-            "name": "Nemesis Encounter: Watcher"
-          }
-        ],
-        "year": 26
-      },
-      {
-        "custom": [],
-        "year": 27
-      },
-      {
-        "custom": [],
-        "year": 28
-      },
-      {
-        "custom": [],
-        "year": 29
-      },
-      {
-        "custom": [],
-        "year": 30
-      },
-      {
-        "custom": [],
-        "year": 31
-      },
-      {
-        "custom": [],
-        "year": 32
-      },
-      {
-        "custom": [],
-        "year": 33
-      },
-      {
-        "custom": [],
-        "year": 34
-      },
-      {
-        "custom": [],
-        "year": 35
-      },
-      {
-        "custom": [],
-        "year": 36
-      }
-    ],
-    "milestone_story_events": [
-      "Settlement has 5 innovations",
-      "First time death count is updated",
-      "First child is born",
-      "Population reaches 15",
-      "Population reaches 0"
-    ],
-    "innovations": [],
-    "locations": [
-      "lantern_hoard"
-    ],
-    "principles": [],
-    "quarries": [
-      "white_lion"
-    ],
-    "storage": [],
-    "nemesis_monsters": [
-      "the_hand",
-      "kings_man",
-      "butcher",
-      "watcher"
-    ],
-    "notes": [],
-    "lost_settlements": 0,
-    "population": 4,
-    "survivors": []
-  }],
-  "survivors": [{
-    "settlement_id": 1,
-    "name": "Gertrude",
-    "sex": "F",
-    "survival": 0,
-    "cannot_spend_survival": false,
-    "cannot_gain_survival": false,
-    "survival_actions": [
-      {
-        "available": true,
-        "handle": "dodge",
-        "name": "Dodge",
-        "sort_order": 0,
-        "title_tip": "'Dodge' is available by default."
-      }, {
-        "available": false,
-        "handle": "encourage",
-        "name": "Encourage",
-        "sort_order": 1,
-        "title_tip": "Settlement innovation 'Language' unlocks this ability."
-      }, {
-        "available": false,
-        "handle": "dash",
-        "name": "Dash",
-        "sort_order": 2,
-        "title_tip": "'Dash' has not been unlocked yet."
-      }, {
-        "available": false,
-        "handle": "surge",
-        "name": "Surge",
-        "sort_order": 3,
-        "title_tip": "'Surge' has not been unlocked yet."
-      }, {
-        "available": false,
-        "handle": "endure",
-        "name": "Endure",
-        "sort_order": 4,
-        "title_tip": "'Endure' has not been unlocked yet."
-      }
-    ],
-    "movement": {
-      "attribute": 5,
-      "tokens": 0,
-      "gear": 0
-    },
-    "accuracy": {
-      "attribute": 0,
-      "tokens": 0,
-      "gear": 0
-    },
-    "strength": {
-      "attribute": 0,
-      "tokens": 0,
-      "gear": 0
-    },
-    "evasion": {
-      "attribute": 0,
-      "tokens": 0,
-      "gear": 0
-    },
-    "luck": {
-      "attribute": 0,
-      "tokens": 0,
-      "gear": 0
-    },
-    "speed": {
-      "attribute": 0,
-      "tokens": 0,
-      "gear": 0
-    },
-    "brain": {
-      "insanity": 0,
-      "insane": false,
-      "light_hit": false
-    },
-    "head": {
-      "armor": 0,
-      "heavy_hit": false
-    },
-    "arms": {
-      "armor": 0,
-      "light_hit": false,
-      "heavy_hit": false
-    },
-    "body": {
-      "armor": 0,
-      "light_hit": false,
-      "heavy_hit": false
-    },
-    "waist": {
-      "armor": 0,
-      "light_hit": false,
-      "heavy_hit": false
-    },
-    "legs": {
-      "armor": 0,
-      "light_hit": false,
-      "heavy_hit": false
-    },
-    "hunt_xp": 0,
-    "weapon_proficiency_type": "",
-    "weapon_proficiency": 0,
-    "courage": 0,
-    "understanding": 0,
-    "cannot_use_fighting_arts": false,
-    "fighting_arts": [],
-    "disorders": [],
-    "abilities": [],
-    "impairments": [],
-    "skip_next_hunt": false,
-    "cannot_be_nominated_for_intimacy": false,
-    "born_in_year": 1,
-    "died_in_year": 1,
-    "dead": false,
-    "cause_of_death": "",
-    "savior": false,
-    "affinities": {
-      "blue": 0,
-      "green": 0,
-      "red": 0
-    },
-    "cursed_items": [],
-    "notes": []
-  }],
+      "cursed_items": [],
+      "notes": []
+    }
+  ],
   "fighting_arts": [
     {
       "id": 1,
@@ -599,140 +608,218 @@
       "type": "fighting_art",
       "source": "core",
       "effect": "All melee weapons in your gear grid gain paired. Ambidexterous cannot be used if there are any shields, two-handed, or heavy gear in your gear grid.",
-      "keywords": ["paired", "shields", "two-handed", "heavy"]
-    }, {
+      "keywords": [
+        "paired",
+        "shields",
+        "two-handed",
+        "heavy"
+      ]
+    },
+    {
       "id": 2,
       "name": "Last Man Standing",
       "type": "fighting_art",
       "source": "core",
       "effect": "While you are the only survivor on the showdown board, you may not gain bleeding tokens or be knocked down.",
-      "keywords": ["knocked down (survivor)", "bleeding"]
-    }, {
+      "keywords": [
+        "knocked down (survivor)",
+        "bleeding"
+      ]
+    },
+    {
       "id": 3,
       "name": "Unconscious Fighter",
       "type": "fighting_art",
       "source": "core",
       "effect": "It takes 7 bleeding tokens to kill you.",
-      "keywords": ["bleeding"]
-    }, {
+      "keywords": [
+        "bleeding"
+      ]
+    },
+    {
       "id": 4,
       "name": "Extra Sense",
       "type": "fighting_art",
       "source": "core",
       "effect": "You may dodge 1 additional time per round.",
-      "keywords": ["dodge"]
-    }, {
+      "keywords": [
+        "dodge"
+      ]
+    },
+    {
       "id": 5,
       "name": "Crossarm Block",
       "type": "fighting_art",
       "source": "core",
       "effect": "Whenever you are hit, after hit locations are rolled, you may change 1 result to the arms hit location.",
-      "keywords": ["hit location"]
-    }, {
+      "keywords": [
+        "hit location"
+      ]
+    },
+    {
       "id": 6,
       "name": "Clutch Fighter",
       "type": "fighting_art",
       "source": "core",
       "effect": "While you have 3 or more bleeding tokens, gain +1 strength and +1 accuracy.",
-      "keywords": ["bleeding"]
-    }, {
+      "keywords": [
+        "bleeding"
+      ]
+    },
+    {
       "id": 7,
       "name": "Thrill Seeker",
       "type": "fighting_art",
       "source": "core",
       "effect": "Whenever you gain survival during the showdown phase, gain 1 additional survival.",
-      "keywords": ["survival"]
-    }, {
+      "keywords": [
+        "survival"
+      ]
+    },
+    {
       "id": 8,
       "name": "Strategist",
       "type": "fighting_art",
       "source": "core",
       "effect": "During the showdown setup, after placing terrain, you may add a Giant Stone Face or a Toppled Pillar terrain card to the showdown board.",
-      "keywords": ["giant stone face", "toppled pillar"]
-    }, {
+      "keywords": [
+        "giant stone face",
+        "toppled pillar"
+      ]
+    },
+    {
       "id": 9,
       "name": "Mighty Strike",
       "type": "fighting_art",
       "source": "core",
       "effect": "On a Perfect hit, gain +2 strength until the end of the attack.",
-      "keywords": ["perfect hit", "attack"]
-    }, {
+      "keywords": [
+        "perfect hit",
+        "attack"
+      ]
+    },
+    {
       "id": 10,
       "name": "Double Dash",
       "type": "fighting_art",
       "source": "core",
       "effect": "During your act, once per round, you may spend 'activation' to gain 'movement'",
-      "keywords": ["activation", "movement"]
-    }, {
+      "keywords": [
+        "activation",
+        "movement"
+      ]
+    },
+    {
       "id": 11,
       "name": "Timeless Eye",
       "type": "fighting_art",
       "source": "core",
       "effect": "Your attack roll is a perfect hit on a result of 9 or 10. You cannot use Timeless Eye, if you have the blind severe head injury.",
-      "keywords": ["perfect hit", "blind"]
-    }, {
+      "keywords": [
+        "perfect hit",
+        "blind"
+      ]
+    },
+    {
       "id": 12,
       "name": "Crazed",
       "type": "fighting_art",
       "source": "core",
       "effect": "On a perfect hit, gain +1 insanity.",
-      "keywords": ["perfect hit"]
-    }, {
+      "keywords": [
+        "perfect hit"
+      ]
+    },
+    {
       "id": 13,
       "name": "Tough",
       "type": "fighting_art",
       "source": "core",
       "effect": "When rolling on a severe injury table, unless you roll a 1, add +1 to the result. (This does not include brain trauma. The result total cannot exceed 10.)",
-      "keywords": ["severe injury"]
-    }, {
+      "keywords": [
+        "severe injury"
+      ]
+    },
+    {
       "id": 14,
       "name": "Monster Claw Style",
       "type": "fighting_art",
       "source": "core",
       "effect": "Your Fist & Tooth attacks gain +1 accuracy, +1 strength and savage",
-      "keywords": ["Fist & Tooth", "savage"]
-    }, {
+      "keywords": [
+        "Fist & Tooth",
+        "savage"
+      ]
+    },
+    {
       "id": 15,
       "name": "Combo Master",
       "type": "fighting_art",
       "source": "core",
       "effect": "On a perfect hit, make 1 additional attack roll.",
-      "keywords": ["perfect hit", "attack"]
-    }, {
+      "keywords": [
+        "perfect hit",
+        "attack"
+      ]
+    },
+    {
       "id": 16,
       "name": "Beserker",
       "type": "fighting_art",
       "source": "core",
       "effect": "Once per showdown, you may spend 'activation' to suffer bash and the frenzy brain trauma.",
-      "keywords": ["activation", "frenzy", "bash"]
-    }, {
+      "keywords": [
+        "activation",
+        "frenzy",
+        "bash"
+      ]
+    },
+    {
       "id": 17,
       "name": "Tumble",
       "type": "fighting_art",
       "source": "core",
       "effect": "When something would collide with you, roll 1d10. On a result of 6+, you successfully tumble out of harm's way. Instead, place your survivor standing on the closest free space outside of the collision path.",
-      "keywords": ["collide"]
-    }, {
+      "keywords": [
+        "collide"
+      ]
+    },
+    {
       "id": 18,
       "name": "Rhythm Chaser",
       "type": "fighting_art",
       "source": "core",
       "effect": "On Arrival, gain +1 evasion token. When you are knocked down, if you don't have an instrument in your gear grid, remove all your +1 evasion tokens. Rhythm Chase cannot be used if there is any heavy gear in your grid.",
-      "keywords": ["arrival", "knocked down (survivor)", "instrument", "heavy"]
-    }, {
+      "keywords": [
+        "arrival",
+        "knocked down (survivor)",
+        "instrument",
+        "heavy"
+      ]
+    },
+    {
       "id": 19,
       "name": "Leader",
       "type": "fighting_art",
       "source": "core",
       "effect": "Whenever you encourage a survivor, they gain +1 speed token until the end of the round. Once per hunt phase, you may inspire another survivor. They use your understanding and courage to resolve a hunt or story event.",
-      "keywords": ["encourage", "understanding", "courage"]
-    }, {
+      "keywords": [
+        "encourage",
+        "understanding",
+        "courage"
+      ]
+    },
+    {
       "id": 20,
       "name": "Orator of Death",
       "type": "fighting_art",
       "source": "core",
       "effect": "Once per showdown, you may spend 'activaton' to have all non-deaf survivors gain +2 insanity. When you die, you encourage all survivors with your last words.",
-      "keywords": ["activation", "non-deaf", "encourage"]
+      "keywords": [
+        "activation",
+        "non-deaf",
+        "encourage"
+      ]
     }
   ],
   "disorders": [
@@ -742,161 +829,249 @@
       "source": "core",
       "description": "Eating is the only thing that helps you escape your miserable life.",
       "effect": "You cannot depart unless you have consumable gear in your gear grid. You must consume if a choice to consume arises.",
-      "keywords": ["depart", "consume"]
-    }, {
+      "keywords": [
+        "depart",
+        "consume"
+      ]
+    },
+    {
       "id": 2,
       "name": "Fear of the Dark",
       "source": "core",
       "description": "You cannot bear the oppressive darkness any longer.",
       "effect": "You retire. If you gain this disorder during a hunt or showdown, you put on a brave face until you return to the settlement, vowing never to leave the Latern Hoard again.",
-      "keywords": ["retire"]
-    }, {
+      "keywords": [
+        "retire"
+      ]
+    },
+    {
       "id": 3,
       "name": "Coprolalia",
       "source": "core",
       "description": "You have complusive tics in the form of sporadic muttering, cursing, whimpering, and screaming.",
       "effect": "All your gear is noisy. You are always a threat unless you are knocked down, even if an effect says otherwise.",
-      "keywords": ["noisy", "threat", "knocked down (survivor)"]
-    }, {
+      "keywords": [
+        "noisy",
+        "threat",
+        "knocked down (survivor)"
+      ]
+    },
+    {
       "id": 4,
       "name": "Hyperactive",
       "source": "core",
       "description": "Whether you are running, fiddling with your gear, or pacing, you are always moving.",
       "effect": "During the showdown, you must move at least 1 space every round.",
-      "keywords": ["move"]
-    }, {
+      "keywords": [
+        "move"
+      ]
+    },
+    {
       "id": 5,
       "name": "Monster Panic",
       "source": "core",
       "description": "Monsters make you feel bad. Really, really bad.",
       "effect": "Whenever you suffer brain damage from an intimidate action, suffer 1 addition brain damage.",
-      "keywords": ["intimidate", "brain damage"]
-    }, {
+      "keywords": [
+        "intimidate",
+        "brain damage"
+      ]
+    },
+    {
       "id": 6,
       "name": "Hemophobia",
       "source": "core",
       "description": "The mere sight of blood makes you lightheaded, and serious gore can knock you down.",
       "effect": "During the showdown, whenever a survivor (including you) gains a bleeding token, you are knocked down",
-      "keywords": ["bleeding", "knocked down (survivor)"]
-    }, {
+      "keywords": [
+        "bleeding",
+        "knocked down (survivor)"
+      ]
+    },
+    {
       "id": 7,
       "name": "Prey",
       "source": "core",
       "description": "You are prey. All there is for you is death.",
       "effect": "You may not spend survival unless you are insane.",
-      "keywords": ["insane", "survival"]
-    }, {
+      "keywords": [
+        "insane",
+        "survival"
+      ]
+    },
+    {
       "id": 8,
       "name": "Honorable",
       "source": "core",
       "description": "You believe in honor and fairness when conducting youself on the battlefield. It is these strong principles that have kept you alive, and you will not abandon them under any circumstances.",
       "effect": "You cannot attack a monster from its blind spot or if it is knocked down.",
-      "keywords": ["blind spot", "knocked down (monster)", "attack"]
-    }, {
+      "keywords": [
+        "blind spot",
+        "knocked down (monster)",
+        "attack"
+      ]
+    },
+    {
       "id": 9,
       "name": "Secretive",
       "source": "core",
       "description": "You love secrets. So much, in fact, that you pretend to have many.",
       "effect": "When you are a returning survivor, you quickly become preoccupied with your own affairs. You must skip the next hunt to deal with them.",
-      "keywords": ["returning survivor", "skip hunt"]
-    }, {
+      "keywords": [
+        "returning survivor",
+        "skip hunt"
+      ]
+    },
+    {
       "id": 10,
       "name": "Anxiety",
       "source": "core",
       "description": "You are afraid of being afraid. You're a nervous wreck, and monsters can smell this in your scent.",
       "effect": "At the start of each showdown, gain the priority target token unless you have stinky gear in your gear grid.",
-      "keywords": ["priority target", "stinky"]
-    }, {
+      "keywords": [
+        "priority target",
+        "stinky"
+      ]
+    },
+    {
       "id": 11,
       "name": "Weak Spot",
       "source": "core",
       "description": "You have an imaginary infirmity.",
       "effect": "When you gain this disorder, roll a random hit location and record it. You cannot depart unless you have armor at this hit location.",
-      "keywords": ["depart", "armor", "hit location"]
-    }, {
+      "keywords": [
+        "depart",
+        "armor",
+        "hit location"
+      ]
+    },
+    {
       "id": 12,
       "name": "Traumatized",
       "source": "core",
       "description": "Your experiences have left you shaken and paralyzed by fear.",
       "effect": "Whenever you end your act adjacent to a monster, you are knocked down.",
-      "keywords": ["knocked down (survivor)"]
-    }, {
+      "keywords": [
+        "knocked down (survivor)"
+      ]
+    },
+    {
       "id": 13,
       "name": "Hoarder",
       "source": "core",
       "description": "You complusively collect and stash anything you can get your hands on. Every little bit you add to your secret hoard makes your existence feel more real.",
       "effect": "Whenever you are a returning survivor, archive 1 resource gained from the last showdown and gain +1 courage.",
-      "keywords": ["returning survivor"]
-    }, {
+      "keywords": [
+        "returning survivor"
+      ]
+    },
+    {
       "id": 14,
       "name": "Post-Traumatic Stress",
       "source": "core",
       "description": "The last hunt was harrowing. All you can do is cower and relive the trauma. Only time can heal your wounds.",
       "effect": "Next settlement phase, you do not contribute or participate in any endeavors. Skip the next hunt to recover.",
-      "keywords": ["endeavors", "skip hunt"]
-    }, {
+      "keywords": [
+        "endeavors",
+        "skip hunt"
+      ]
+    },
+    {
       "id": 15,
       "name": "Rageholic",
       "source": "core",
       "description": "Your rage boils out of control causing you to see read at the slightest provocation.",
       "effect": "Whenever you suffer a severe injury, also suffer the frenzy brain trauma.",
-      "keywords": ["frenzy"]
-    }, {
+      "keywords": [
+        "frenzy"
+      ]
+    },
+    {
       "id": 16,
       "name": "Seizures",
       "source": "core",
       "description": "Lingering damage from your head injuries has caused you to experience periods of uncontrollable shaking and absence of thought.",
       "effect": "During the showdown, whenever you suffer damage to your head location, you are knocked down.",
-      "keywords": ["knocked down (survivor)"]
-    }, {
+      "keywords": [
+        "knocked down (survivor)"
+      ]
+    },
+    {
       "id": 17,
       "name": "Immortal",
       "source": "core",
       "description": "You are immortal! You will live forever and cannot be killed.",
       "effect": "While you are insane, convert all damage to your hit locations to brain damage. You are so busy reveling in your own glory that you cannot spend survival while insane.",
-      "keywords": ["insane", "brain damage", "survival"]
-    }, {
+      "keywords": [
+        "insane",
+        "brain damage",
+        "survival"
+      ]
+    },
+    {
       "id": 18,
       "name": "Indecision",
       "source": "core",
       "description": "Past decisions haunt you ceaselessly. You are crippled by indecision, and even the most trivial choices grip you with terror.",
       "effect": "If you are the event revealer of hunt events that call you to make a roll, roll twice and user the lower result.",
-      "keywords": ["event revealer"]
-    }, {
+      "keywords": [
+        "event revealer"
+      ]
+    },
+    {
       "id": 19,
       "name": "Apathetic",
       "source": "core",
       "description": "You've given up. Nothing seems to matter. You have no concern for your own wellbeing.",
       "effect": "You cannot use or gain survival. You cannot gain courage. Cure this disorder if you have 8+ understanding.",
-      "keywords": ["survival", "courage", "understanding"]
-    }, {
+      "keywords": [
+        "survival",
+        "courage",
+        "understanding"
+      ]
+    },
+    {
       "id": 20,
       "name": "Aichmophobia",
       "source": "core",
       "description": "Sharp things make you uncomfortable. It's just a matter of time before someone cuts themselves.",
       "effect": "You cannot activate or depart with axes, swords, spears, daggers, scythes, or katars in your gear grid.",
-      "keywords": ["depart"]
-    }, {
+      "keywords": [
+        "depart"
+      ]
+    },
+    {
       "id": 21,
       "name": "Squeamish",
       "source": "core",
       "description": "You can't handle bad smells.",
       "effect": "You cannot depart with any stinky gear in your gear grid. If a status or effect would cause you to become stinky, lose all your survival.",
-      "keywords": ["depart", "stinky"]
-    }, {
+      "keywords": [
+        "depart",
+        "stinky"
+      ]
+    },
+    {
       "id": 22,
       "name": "Vestiphobia",
       "source": "core",
       "description": "Even the lightest armor rubs harshly against your skin and constricts your ability to move.",
       "effect": "You cannot wear armor at the body location. If you are wearing armor at the body location when you gain this disorder, archive it as you tear if off your person!",
-      "keywords": ["body", "armor"]
-    }, {
+      "keywords": [
+        "body",
+        "armor"
+      ]
+    },
+    {
       "id": 23,
       "name": "Quixotic",
       "source": "core",
       "description": "You carry the weight of your settlement on your shoulders. Everyone is counting on you to save them, and you will rise to the challenge.",
       "effect": "If you are insane when you depart, gain +1 survival and +1 strength token.",
-      "keywords": ["insane", "depart"]
+      "keywords": [
+        "insane",
+        "depart"
+      ]
     }
   ]
 }

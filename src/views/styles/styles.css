@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Oswald:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #F5F8FA;
+}
+
+.ant-layout .dh-main-content {
+  border:1px #ccc solid;
+}
+
+.ant-layout-header .subheader {
+  border:2px #3db8c1 solid;
+}
+
+
+.ant-table-row {
+  cursor: pointer;
+}

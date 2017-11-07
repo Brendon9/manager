@@ -1,5 +1,6 @@
 import {
-  GET_SETTLEMENT
+  SETTLEMENT_REQUEST_SUCCESS,
+  SETTLEMENT_LIST_REQUEST_SUCCESS
 } from 'core/settlement'
 
 import {
@@ -11,9 +12,12 @@ import {
 } from "core/survivor"
 
 const initialState = {
-  user_assets: {
-    players: {},
-    survivors: {},
+  list: [],
+  item: {
+    principles: [],
+    survivors: [],
+    milestone_story_events: [],
+    locations: [],
   }
 }
 
@@ -22,8 +26,11 @@ export const settlementReducer = (state = initialState, action) => {
 
   switch (action.type) {
 
-    case GET_SETTLEMENT:
-      return action.payload
+    case SETTLEMENT_REQUEST_SUCCESS:
+      return { ...state, item: action.settlement }
+
+    case SETTLEMENT_LIST_REQUEST_SUCCESS:
+      return { ...state, list: action.settlements }
 
     case SET_MANY_ASSETS:
       index = state.user_assets.survivors.map(el => el.sheet._id.$oid).indexOf(action.survivor_id)

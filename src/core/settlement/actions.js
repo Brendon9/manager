@@ -1,28 +1,39 @@
 import axios from "axios"
-import { GET_SETTLEMENT } from "./constants"
+import {
+  SETTLEMENT_REQUESTED, SETTLEMENT_REQUEST_SUCCESS,
+  SETTLEMENT_LIST_REQUESTED, SETTLEMENT_LIST_REQUEST_SUCCESS,
+  SETTLEMENT_UPDATED
+} from "./constants"
 import history from "utils/history"
 
 const KDM_API = `${process.env.REACT_APP_API_URL}`
 
 axios.defaults.headers.common["Content-Type"] = "application/json"
 
-const getSettlementAsync = (data) => ({
-  type: GET_SETTLEMENT,
-  payload: data
+export const updateSettlement = (id, values) => ({
+  type: SETTLEMENT_UPDATED,
+  id,
+  payload: values,
 })
 
-export const getSettlement = (id) => {
-  return dispatch => {
-    dispatch(getSettlementAsync({}))
-    axios({
-      method: 'GET',
-      url: `${KDM_API}/settlements/${id}`
-    }).then(res => {
-      console.log("SETTLEMENT", res)
-      dispatch(getSettlementAsync(res.data))
-    })
-  }
-}
+export const getSettlement = (id) => ({
+  type: SETTLEMENT_REQUESTED,
+  id
+})
+
+export const settlementRequestSuccess = (settlement) => ({
+  type: SETTLEMENT_REQUEST_SUCCESS,
+  settlement
+})
+
+export const getSettlementList = () => ({
+  type: SETTLEMENT_LIST_REQUESTED
+})
+
+export const settlementListRequestSuccess = (settlements) => ({
+  type: SETTLEMENT_LIST_REQUEST_SUCCESS,
+  settlements
+})
 
 // create call
 export const createSettlement = (data) => {
@@ -38,17 +49,17 @@ export const createSettlement = (data) => {
   }
 }
 
-//update call
-export const updateSettlement = (id) => {
-  return dispatch => {
-    axios({
-      method: "PUT",
-      url: `${KDM_API}/settlements/${id}`,
-      data: {
-        survival_limit: 3
-      }
-    }).then(res => {
-      console.log("UPDATE", res)
-    })
-  }
-}
+// //update call
+// export const updateSettlement = (id) => {
+//   return dispatch => {
+//     axios({
+//       method: "PUT",
+//       url: `${KDM_API}/settlements/${id}`,
+//       data: {
+//         survival_limit: 3
+//       }
+//     }).then(res => {
+//       console.log("UPDATE", res)
+//     })
+//   }
+// }

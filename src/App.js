@@ -33,6 +33,8 @@ import More from 'views/containers/More'
 import Aya from 'views/containers/Aya'
 import NotFound from 'views/components/NotFound'
 
+import 'views/styles/styles.css';
+
 import configureStore from 'core/store'
 const store = configureStore()
 
