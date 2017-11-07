@@ -1,608 +1,525 @@
 {
   "campaigns": [],
-  "settlements": [
-    {
-      "id": 1,
-      "survival_limit": 1,
-      "name": "Emon",
-      "death_count": 2,
-      "campaign": "people_of_the_lantern",
-      "lantern_year": 0,
-      "timeline": [
-        {
-          "year": 0,
-          "showdown_event": [
-            {
-              "name": "White Lion (First Story)"
-            }
-          ]
-        },
-        {
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_first_day",
-              "name": "First Day"
-            }
-          ],
-          "story_event": [
-            {
-              "handle": "core_returning_survivors",
-              "type": "story_event",
-              "name": "Returning Survivors",
-              "page": 151
-            }
-          ],
-          "year": 1
-        },
-        {
-          "custom": [],
-          "story_event": [
-            {
-              "handle": "core_endless_screams",
-              "type": "story_event",
-              "name": "Endless Screams",
-              "page": 115
-            }
-          ],
-          "year": 2
-        },
-        {
-          "custom": [],
-          "year": 3
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: Butcher"
-            }
-          ],
-          "year": 4
-        },
-        {
-          "custom": [],
-          "story_event": [
-            {
-              "handle": "core_hands_of_heat",
-              "type": "story_event",
-              "name": "Hands of Heat",
-              "page": 117
-            }
-          ],
-          "year": 5
-        },
-        {
-          "custom": [
-            {
-              "type": "settlement_event",
-              "handle": "core_murder",
-              "name": "Murder"
-            }
-          ],
-          "story_event": [
-            {
-              "handle": "core_armored_strangers",
-              "type": "story_event",
-              "name": "Armored Strangers",
-              "page": 103
-            }
-          ],
-          "year": 6
-        },
-        {
-          "custom": [],
-          "story_event": [
-            {
-              "handle": "core_phoenix_feather",
-              "type": "story_event",
-              "name": "Phoenix Feather",
-              "page": 139
-            }
-          ],
-          "year": 7
-        },
-        {
-          "custom": [
-            {
-              "type": "settlement_event",
-              "handle": "core_murder",
-              "name": "Murder"
-            }
-          ],
-          "year": 8
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: King's Man"
-            }
-          ],
-          "settlement_event": [
-            {
-              "name": "Cracks in the ground"
-            }
-          ],
-          "year": 9
-        },
-        {
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_acid_storm",
-              "name": "Acid Storm"
-            }
-          ],
-          "year": 10
-        },
-        {
-          "custom": [],
-          "story_event": [
-            {
-              "handle": "core_regal_visit",
-              "type": "story_event",
-              "name": "Regal Visit",
-              "page": 149
-            }
-          ],
-          "year": 11
-        },
-        {
-          "showdown_event": [
-            {
-              "name": "Screaming Antelope Lvl 1"
-            }
-          ],
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_open_maw",
-              "name": "Open Maw"
-            }
-          ],
-          "story_event": [
-            {
-              "handle": "core_conviction",
-              "type": "story_event",
-              "name": "Principle: Conviction",
-              "page": 141
-            }
-          ],
-          "year": 12
-        },
-        {
-          "custom": [
-            {
-              "type": "story_event",
-              "handle": "core_hooded_knight",
-              "name": "Hooded Knight",
-              "page": 121
-            }
-          ],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: The Hand"
-            }
-          ],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_plague",
-              "name": "Plague"
-            }
-          ],
-          "year": 13
-        },
-        {
-          "showdown_event": [
-            {
-              "name": "Phoenix Lvl 1"
-            }
-          ],
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_dark_dentist",
-              "name": "Dark Dentist"
-            },
-            {
-              "type": "settlement_event",
-              "handle": "core_plague",
-              "name": "Plague"
-            }
-          ],
-          "year": 14
-        },
-        {
-          "showdown_event": [
-            {
-              "name": "White Lion Lvl 2"
-            }
-          ],
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_dark_dentist",
-              "name": "Dark Dentist"
-            }
-          ],
-          "year": 15
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter"
-            }
-          ],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_clinging_mist",
-              "name": "Clinging Mist"
-            }
-          ],
-          "year": 16
-        },
-        {
-          "showdown_event": [
-            {
-              "name": "White Lion Lvl 1"
-            }
-          ],
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_lights_in_the_sky",
-              "name": "Lights in the Sky"
-            }
-          ],
-          "story_event": [
-            {
-              "type": "story_event",
-              "handle": "core_hooded_knight",
-              "name": "Hooded Knight",
-              "page": 121
-            }
-          ],
-          "year": 17
-        },
-        {
-          "custom": [],
-          "year": 18
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter"
-            }
-          ],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_acid_storm",
-              "name": "Acid Storm"
-            }
-          ],
-          "year": 19
-        },
-        {
-          "custom": [],
-          "settlement_event": [
-            {
-              "type": "settlement_event",
-              "handle": "core_acid_storm",
-              "name": "Acid Storm"
-            }
-          ],
-          "story_event": [
-            {
-              "type": "story_event",
-              "handle": "core_hooded_knight",
-              "name": "Hooded Knight",
-              "page": 121
-            },
-            {
-              "type": "story_event",
-              "handle": "core_watched",
-              "name": "Watched",
-              "page": 175
-            }
-          ],
-          "year": 20
-        },
-        {
-          "showdown_event": [
-            {
-              "name": "Screaming Antelope Lvl 2"
-            }
-          ],
-          "custom": [],
-          "settlement_event": [
-            {
-              "name": "Acid Rain"
-            }
-          ],
-          "year": 21
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: Watcher"
-            }
-          ],
-          "story_event": [
-            {
-              "type": "story_event",
-              "handle": "core_death",
-              "name": "Principle: Death",
-              "page": 143
-            },
-            {
-              "type": "story_event",
-              "handle": "core_new_life",
-              "name": "Principle: New Life",
-              "page": 145
-            },
-            {
-              "type": "story_event",
-              "handle": "core_society",
-              "name": "Principle: Society",
-              "page": 147
-            }
-          ],
-          "year": 22
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: Level 3"
-            }
-          ],
-          "year": 23
-        },
-        {
-          "custom": [],
-          "story_event": [
-            {
-              "type": "story_event",
-              "handle": "core_bone_witch",
-              "name": "Bone Witch",
-              "page": 109
-            },
-            {
-              "type": "story_event",
-              "handle": "core_hooded_knight",
-              "name": "Hooded Knight",
-              "page": 121
-            }
-          ],
-          "year": 24
-        },
-        {
-          "custom": [],
-          "year": 25
-        },
-        {
-          "custom": [],
-          "nemesis_encounter": [
-            {
-              "name": "Nemesis Encounter: Watcher"
-            }
-          ],
-          "year": 26
-        },
-        {
-          "custom": [],
-          "year": 27
-        },
-        {
-          "custom": [],
-          "year": 28
-        },
-        {
-          "custom": [],
-          "year": 29
-        },
-        {
-          "custom": [],
-          "year": 30
-        },
-        {
-          "custom": [],
-          "year": 31
-        },
-        {
-          "custom": [],
-          "year": 32
-        },
-        {
-          "custom": [],
-          "year": 33
-        },
-        {
-          "custom": [],
-          "year": 34
-        },
-        {
-          "custom": [],
-          "year": 35
-        },
-        {
-          "custom": [],
-          "year": 36
-        }
-      ],
-      "milestone_story_events": [
-        "Settlement has 5 innovations",
-        "First time death count is updated",
-        "First child is born",
-        "Population reaches 15",
-        "Population reaches 0"
-      ],
-      "innovations": [],
-      "locations": [
-        "lantern_hoard"
-      ],
-      "principles": [],
-      "quarries": [
-        "white_lion"
-      ],
-      "storage": [],
-      "nemesis_monsters": [
-        "the_hand",
-        "kings_man",
-        "butcher",
-        "watcher"
-      ],
-      "notes": [],
-      "lost_settlements": 0,
-      "population": 4,
-      "survivors": []
-    }
-  ],
-  "survivors": [
-    {
-      "settlement_id": 1,
-      "name": "Gertrude",
-      "sex": "F",
-      "survival": 0,
-      "cannot_spend_survival": false,
-      "cannot_gain_survival": false,
-      "survival_actions": [
-        {
-          "available": true,
-          "handle": "dodge",
-          "name": "Dodge",
-          "sort_order": 0,
-          "title_tip": "'Dodge' is available by default."
-        },
-        {
-          "available": false,
-          "handle": "encourage",
-          "name": "Encourage",
-          "sort_order": 1,
-          "title_tip": "Settlement innovation 'Language' unlocks this ability."
-        },
-        {
-          "available": false,
-          "handle": "dash",
-          "name": "Dash",
-          "sort_order": 2,
-          "title_tip": "'Dash' has not been unlocked yet."
-        },
-        {
-          "available": false,
-          "handle": "surge",
-          "name": "Surge",
-          "sort_order": 3,
-          "title_tip": "'Surge' has not been unlocked yet."
-        },
-        {
-          "available": false,
-          "handle": "endure",
-          "name": "Endure",
-          "sort_order": 4,
-          "title_tip": "'Endure' has not been unlocked yet."
-        }
-      ],
-      "movement": {
-        "attribute": 5,
-        "tokens": 0,
-        "gear": 0
+  "settlements": [{
+    "id": 1,
+    "survival_limit": 1,
+    "name": "Emon",
+    "death_count": 2,
+    "campaign": "people_of_the_lantern",
+    "lantern_year": 0,
+    "timeline": [{
+        "year": 0,
+        "showdown_event": [{
+          "name": "White Lion (First Story)"
+        }]
       },
-      "accuracy": {
-        "attribute": 0,
-        "tokens": 0,
-        "gear": 0
+      {
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_first_day",
+          "name": "First Day"
+        }],
+        "story_event": [{
+          "handle": "core_returning_survivors",
+          "type": "story_event",
+          "name": "Returning Survivors",
+          "page": 151
+        }],
+        "year": 1
       },
-      "strength": {
-        "attribute": 0,
-        "tokens": 0,
-        "gear": 0
+      {
+        "custom": [],
+        "story_event": [{
+          "handle": "core_endless_screams",
+          "type": "story_event",
+          "name": "Endless Screams",
+          "page": 115
+        }],
+        "year": 2
       },
-      "evasion": {
-        "attribute": 0,
-        "tokens": 0,
-        "gear": 0
+      {
+        "custom": [],
+        "year": 3
       },
-      "luck": {
-        "attribute": 0,
-        "tokens": 0,
-        "gear": 0
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: Butcher"
+        }],
+        "year": 4
       },
-      "speed": {
-        "attribute": 0,
-        "tokens": 0,
-        "gear": 0
+      {
+        "custom": [],
+        "story_event": [{
+          "handle": "core_hands_of_heat",
+          "type": "story_event",
+          "name": "Hands of Heat",
+          "page": 117
+        }],
+        "year": 5
       },
-      "brain": {
-        "insanity": 0,
-        "insane": false,
-        "light_hit": false
+      {
+        "custom": [{
+          "type": "settlement_event",
+          "handle": "core_murder",
+          "name": "Murder"
+        }],
+        "story_event": [{
+          "handle": "core_armored_strangers",
+          "type": "story_event",
+          "name": "Armored Strangers",
+          "page": 103
+        }],
+        "year": 6
       },
-      "head": {
-        "armor": 0,
-        "heavy_hit": false
+      {
+        "custom": [],
+        "story_event": [{
+          "handle": "core_phoenix_feather",
+          "type": "story_event",
+          "name": "Phoenix Feather",
+          "page": 139
+        }],
+        "year": 7
       },
-      "arms": {
-        "armor": 0,
-        "light_hit": false,
-        "heavy_hit": false
+      {
+        "custom": [{
+          "type": "settlement_event",
+          "handle": "core_murder",
+          "name": "Murder"
+        }],
+        "year": 8
       },
-      "body": {
-        "armor": 0,
-        "light_hit": false,
-        "heavy_hit": false
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: King's Man"
+        }],
+        "settlement_event": [{
+          "name": "Cracks in the ground"
+        }],
+        "year": 9
       },
-      "waist": {
-        "armor": 0,
-        "light_hit": false,
-        "heavy_hit": false
+      {
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_acid_storm",
+          "name": "Acid Storm"
+        }],
+        "year": 10
       },
-      "legs": {
-        "armor": 0,
-        "light_hit": false,
-        "heavy_hit": false
+      {
+        "custom": [],
+        "story_event": [{
+          "handle": "core_regal_visit",
+          "type": "story_event",
+          "name": "Regal Visit",
+          "page": 149
+        }],
+        "year": 11
       },
-      "hunt_xp": 0,
-      "weapon_proficiency_type": "",
-      "weapon_proficiency": 0,
-      "courage": 0,
-      "understanding": 0,
-      "cannot_use_fighting_arts": false,
-      "fighting_arts": [],
-      "disorders": [],
-      "abilities": [],
-      "impairments": [],
-      "skip_next_hunt": false,
-      "cannot_be_nominated_for_intimacy": false,
-      "born_in_year": 1,
-      "died_in_year": 1,
-      "dead": false,
-      "cause_of_death": "",
-      "savior": false,
-      "affinities": {
-        "blue": 0,
-        "green": 0,
-        "red": 0
+      {
+        "showdown_event": [{
+          "name": "Screaming Antelope Lvl 1"
+        }],
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_open_maw",
+          "name": "Open Maw"
+        }],
+        "story_event": [{
+          "handle": "core_conviction",
+          "type": "story_event",
+          "name": "Principle: Conviction",
+          "page": 141
+        }],
+        "year": 12
       },
-      "cursed_items": [],
-      "notes": []
-    }
-  ],
-  "fighting_arts": [
-    {
+      {
+        "custom": [{
+          "type": "story_event",
+          "handle": "core_hooded_knight",
+          "name": "Hooded Knight",
+          "page": 121
+        }],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: The Hand"
+        }],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_plague",
+          "name": "Plague"
+        }],
+        "year": 13
+      },
+      {
+        "showdown_event": [{
+          "name": "Phoenix Lvl 1"
+        }],
+        "custom": [],
+        "settlement_event": [{
+            "type": "settlement_event",
+            "handle": "core_dark_dentist",
+            "name": "Dark Dentist"
+          },
+          {
+            "type": "settlement_event",
+            "handle": "core_plague",
+            "name": "Plague"
+          }
+        ],
+        "year": 14
+      },
+      {
+        "showdown_event": [{
+          "name": "White Lion Lvl 2"
+        }],
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_dark_dentist",
+          "name": "Dark Dentist"
+        }],
+        "year": 15
+      },
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter"
+        }],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_clinging_mist",
+          "name": "Clinging Mist"
+        }],
+        "year": 16
+      },
+      {
+        "showdown_event": [{
+          "name": "White Lion Lvl 1"
+        }],
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_lights_in_the_sky",
+          "name": "Lights in the Sky"
+        }],
+        "story_event": [{
+          "type": "story_event",
+          "handle": "core_hooded_knight",
+          "name": "Hooded Knight",
+          "page": 121
+        }],
+        "year": 17
+      },
+      {
+        "custom": [],
+        "year": 18
+      },
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter"
+        }],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_acid_storm",
+          "name": "Acid Storm"
+        }],
+        "year": 19
+      },
+      {
+        "custom": [],
+        "settlement_event": [{
+          "type": "settlement_event",
+          "handle": "core_acid_storm",
+          "name": "Acid Storm"
+        }],
+        "story_event": [{
+            "type": "story_event",
+            "handle": "core_hooded_knight",
+            "name": "Hooded Knight",
+            "page": 121
+          },
+          {
+            "type": "story_event",
+            "handle": "core_watched",
+            "name": "Watched",
+            "page": 175
+          }
+        ],
+        "year": 20
+      },
+      {
+        "showdown_event": [{
+          "name": "Screaming Antelope Lvl 2"
+        }],
+        "custom": [],
+        "settlement_event": [{
+          "name": "Acid Rain"
+        }],
+        "year": 21
+      },
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: Watcher"
+        }],
+        "story_event": [{
+            "type": "story_event",
+            "handle": "core_death",
+            "name": "Principle: Death",
+            "page": 143
+          },
+          {
+            "type": "story_event",
+            "handle": "core_new_life",
+            "name": "Principle: New Life",
+            "page": 145
+          },
+          {
+            "type": "story_event",
+            "handle": "core_society",
+            "name": "Principle: Society",
+            "page": 147
+          }
+        ],
+        "year": 22
+      },
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: Level 3"
+        }],
+        "year": 23
+      },
+      {
+        "custom": [],
+        "story_event": [{
+            "type": "story_event",
+            "handle": "core_bone_witch",
+            "name": "Bone Witch",
+            "page": 109
+          },
+          {
+            "type": "story_event",
+            "handle": "core_hooded_knight",
+            "name": "Hooded Knight",
+            "page": 121
+          }
+        ],
+        "year": 24
+      },
+      {
+        "custom": [],
+        "year": 25
+      },
+      {
+        "custom": [],
+        "nemesis_encounter": [{
+          "name": "Nemesis Encounter: Watcher"
+        }],
+        "year": 26
+      },
+      {
+        "custom": [],
+        "year": 27
+      },
+      {
+        "custom": [],
+        "year": 28
+      },
+      {
+        "custom": [],
+        "year": 29
+      },
+      {
+        "custom": [],
+        "year": 30
+      },
+      {
+        "custom": [],
+        "year": 31
+      },
+      {
+        "custom": [],
+        "year": 32
+      },
+      {
+        "custom": [],
+        "year": 33
+      },
+      {
+        "custom": [],
+        "year": 34
+      },
+      {
+        "custom": [],
+        "year": 35
+      },
+      {
+        "custom": [],
+        "year": 36
+      }
+    ],
+    "milestone_story_events": [
+      "Settlement has 5 innovations",
+      "First time death count is updated",
+      "First child is born",
+      "Population reaches 15",
+      "Population reaches 0"
+    ],
+    "innovations": [],
+    "locations": [
+      "lantern_hoard"
+    ],
+    "principles": [],
+    "quarries": [
+      "white_lion"
+    ],
+    "storage": [],
+    "nemesis_monsters": [
+      "the_hand",
+      "kings_man",
+      "butcher",
+      "watcher"
+    ],
+    "notes": [],
+    "lost_settlements": 0,
+    "population": 4,
+    "survivors": []
+  }],
+  "survivors": [{
+    "settlement_id": 1,
+    "name": "Gertrude",
+    "sex": "F",
+    "survival": 0,
+    "cannot_spend_survival": false,
+    "cannot_gain_survival": false,
+    "survival_actions": [{
+        "available": true,
+        "handle": "dodge",
+        "name": "Dodge",
+        "sort_order": 0,
+        "title_tip": "'Dodge' is available by default."
+      },
+      {
+        "available": false,
+        "handle": "encourage",
+        "name": "Encourage",
+        "sort_order": 1,
+        "title_tip": "Settlement innovation 'Language' unlocks this ability."
+      },
+      {
+        "available": false,
+        "handle": "dash",
+        "name": "Dash",
+        "sort_order": 2,
+        "title_tip": "'Dash' has not been unlocked yet."
+      },
+      {
+        "available": false,
+        "handle": "surge",
+        "name": "Surge",
+        "sort_order": 3,
+        "title_tip": "'Surge' has not been unlocked yet."
+      },
+      {
+        "available": false,
+        "handle": "endure",
+        "name": "Endure",
+        "sort_order": 4,
+        "title_tip": "'Endure' has not been unlocked yet."
+      }
+    ],
+    "movement": {
+      "attribute": 5,
+      "tokens": 0,
+      "gear": 0
+    },
+    "accuracy": {
+      "attribute": 0,
+      "tokens": 0,
+      "gear": 0
+    },
+    "strength": {
+      "attribute": 0,
+      "tokens": 0,
+      "gear": 0
+    },
+    "evasion": {
+      "attribute": 0,
+      "tokens": 0,
+      "gear": 0
+    },
+    "luck": {
+      "attribute": 0,
+      "tokens": 0,
+      "gear": 0
+    },
+    "speed": {
+      "attribute": 0,
+      "tokens": 0,
+      "gear": 0
+    },
+    "brain": {
+      "insanity": 0,
+      "insane": false,
+      "light_hit": false
+    },
+    "head": {
+      "armor": 0,
+      "heavy_hit": false
+    },
+    "arms": {
+      "armor": 0,
+      "light_hit": false,
+      "heavy_hit": false
+    },
+    "body": {
+      "armor": 0,
+      "light_hit": false,
+      "heavy_hit": false
+    },
+    "waist": {
+      "armor": 0,
+      "light_hit": false,
+      "heavy_hit": false
+    },
+    "legs": {
+      "armor": 0,
+      "light_hit": false,
+      "heavy_hit": false
+    },
+    "hunt_xp": 0,
+    "weapon_proficiency_type": "",
+    "weapon_proficiency": 0,
+    "courage": 0,
+    "understanding": 0,
+    "cannot_use_fighting_arts": false,
+    "fighting_arts": [],
+    "disorders": [],
+    "abilities": [],
+    "impairments": [],
+    "skip_next_hunt": false,
+    "cannot_be_nominated_for_intimacy": false,
+    "born_in_year": 1,
+    "died_in_year": 1,
+    "dead": false,
+    "cause_of_death": "",
+    "savior": false,
+    "affinities": {
+      "blue": 0,
+      "green": 0,
+      "red": 0
+    },
+    "cursed_items": [],
+    "notes": []
+  }],
+  "fighting_arts": [{
       "id": 1,
       "name": "Ambidexterous",
       "type": "fighting_art",
@@ -822,8 +739,7 @@
       ]
     }
   ],
-  "disorders": [
-    {
+  "disorders": [{
       "id": 1,
       "name": "Binge Eating",
       "source": "core",
